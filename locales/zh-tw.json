@@ -1,0 +1,39 @@
+{
+  "common": {
+    "choose-language": "選擇語言",
+    "coptyright": "版權所有 © {year} 海外新聞網",
+    "description": "簡介",
+    "view-detail": "查看詳情",
+    "search-placeholder": "搜索關聯詞，或者短語 ...",
+    "search-result": "為您找到 {total} 條結果",
+    "advert": "敬請期待 — 精彩更新即將到來",
+    "advert-label": "廣告",
+    "search-label": "搜尋新聞",
+    "filter-label": "篩選新聞",
+    "news-label": "最新新聞",
+    "btn-back": "返回",
+    "recommended-label": "推薦"
+  },
+  "page": {
+    "not-found": {
+      "title": "頁面未找到",
+      "sub-title": "此頁面暫時不可用，請查看其他頁面",
+      "btn": "返回首頁"
+    },
+    "error": {
+      "title": "伺服器開小差了",
+      "sub-title": "請稍後再試",
+      "btn": "返回首頁"
+    }
+  },
+  "components": {
+    "list-empty-state": {
+      "title": "沒有新聞記錄",
+      "subtitle": "很抱歉，目前我們沒有記錄可以顯示"
+    },
+    "search-empty-state": {
+      "title": "未找到查詢新聞",
+      "subtitle": "很抱歉，請使用其他關鍵詞搜尋"
+    }
+  }
+}

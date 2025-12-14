@@ -1,0 +1,39 @@
+{
+  "common": {
+    "choose-language": "Choose language",
+    "coptyright": "© {year} HaiWai News. All rights reserved",
+    "description": "Introduction",
+    "view-detail": "View detail",
+    "search-placeholder": "Search related words or phrases ...",
+    "search-result": "Found {total} results for you",
+    "advert": "Stay Tuned — Exciting Updates Ahead",
+    "advert-label": "Advert",
+    "search-label": "Search News",
+    "filter-label": "Filter News",
+    "news-label": "Latest News",
+    "btn-back": "Go back",
+    "recommended-label": "Recommended"
+  },
+  "page": {
+    "not-found": {
+      "title": "Page Not Found",
+      "sub-title": "This page is temporarily unavailable, please check other pages.",
+      "btn": "Return to Home"
+    },
+    "error": {
+      "title": "The server is having issues",
+      "sub-title": "Please try again later",
+      "btn": "Return to Home"
+    }
+  },
+  "components": {
+    "list-empty-state": {
+      "title": "No news available",
+      "subtitle": "Sorry, we currently have no records to display."
+    },
+    "search-empty-state": {
+      "title": "News Not Found",
+      "subtitle": "Sorry, please try searching with other related keywords"
+    }
+  }
+}

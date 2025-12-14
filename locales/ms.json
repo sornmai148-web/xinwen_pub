@@ -1,0 +1,39 @@
+{
+  "common": {
+    "choose-language": "Pilih Bahasa",
+    "coptyright": "© {year} HaiWai News. Hak cipta terpelihara",
+    "description": "Pengenalan",
+    "view-detail": "Lihat butiran",
+    "search-placeholder": "Cari perkataan berkaitan atau frasa ...",
+    "search-result": "Menemui {total} hasil untuk anda",
+    "advert": "Nantikan — Kemas Kini Menarik Akan Datang",
+    "advert-label": "Iklan",
+    "search-label": "Cari Berita",
+    "filter-label": "Tapis Berita",
+    "news-label": "Berita Terkini",
+    "btn-back": "Kembali",
+    "recommended-label": "Disyorka"
+  },
+  "page": {
+    "not-found": {
+      "title": "Halaman Tidak Ditemui",
+      "sub-title": "Halaman ini tidak tersedia buat sementara waktu, sila lihat halaman lain",
+      "btn": "Kembali ke Laman Utama"
+    },
+    "error": {
+      "title": "Pelayan menghadapi masalah",
+      "sub-title": "Sila cuba lagi nanti",
+      "btn": "Kembali ke Laman Utama"
+    }
+  },
+  "components": {
+    "list-empty-state": {
+      "title": "Tiada rekod berita",
+      "subtitle": "Maaf, kami tiada rekod untuk dipaparkan pada masa ini"
+    },
+    "search-empty-state": {
+      "title": "Berita Tidak Ditemui",
+      "subtitle": "Maaf, sila cuba cari menggunakan kata kunci lain yang berkaitan"
+    }
+  }
+}

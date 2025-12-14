@@ -1,0 +1,39 @@
+{
+  "common": {
+    "choose-language": "选择语言",
+    "coptyright": "版权所有 © {year} 海外新闻网",
+    "description": "简介",
+    "view-detail": "查看详情",
+    "search-placeholder": "搜索关联词，或者短语 ...",
+    "search-result": "为您找到 {total} 条结果",
+    "advert": "敬请期待 — 精彩更新即将到来",
+    "advert-label": "广告",
+    "search-label": "搜索新闻",
+    "filter-label": "筛选新闻",
+    "news-label": "最新新闻",
+    "btn-back": "返回",
+    "recommended-label": "推荐"
+  },
+  "page": {
+    "not-found": {
+      "title": "页面未找到",
+      "sub-title": "此页面暂时不可用，请查看其他页面",
+      "btn": "返回首页"
+    },
+    "error": {
+      "title": "服务器开小差了",
+      "sub-title": "请稍后再试",
+      "btn": "返回首页"
+    }
+  },
+  "components": {
+    "list-empty-state": {
+      "title": "没有新闻记录",
+      "subtitle": "很抱歉，当前我们没有记录展示"
+    },
+    "search-empty-state": {
+      "title": "未找到查询新闻",
+      "subtitle": "很抱歉，请使用其他关键词搜索"
+    }
+  }
+}

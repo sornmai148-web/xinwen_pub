@@ -103,17 +103,17 @@ const Page: NextPage<PageProps> = async ({ params, searchParams }) => {
 
   return (
     <div className="grid grid-cols-12 max-w-6xl mx-auto min-h-[calc(100dvh-145px)] md:min-h-[calc(100dvh-210px)]">
-      <div className="col-span-12 md:col-span-8 max-md:border-r max-md:border-l border-gray-200/50 md:pt-4 px-1">
-        <div className="max-md:pt-2 pb-2 px-1 z-10">
-          <div className="py-2 md:py-3 md:px-2 rounded-md md:rounded-xl flex items-center justify-between bg-white backdrop-blur-xs shadow-[0px_0px_21px_0px_rgba(0,_0,_0,_0.1)]">
+      <div className="col-span-12 md:col-span-8 max-md:border-r max-md:border-l border-gray-200/50 md:pt-2 px-1">
+        <div className="pb-2 px-1 z-10">
+          <div className="py-2 md:py-3 md:px-2 rounded-xs flex items-center justify-between bg-white">
             <NewsBreadcrumb parentLabel={parent_label} subLabel={sub_label} />
           </div>
         </div>
 
-        <Container className="max-md:py-6 md:p-6 bg-white mx-1.5 rounded-md md:rounded-xl mb-4 shadow-[0px_0px_21px_0px_rgba(0,_0,_0,_0.1)]">
+        <Container className="max-md:py-6 md:p-6 bg-white mx-1.5 mb-4 rounded-xs">
           <div className="flex flex-col space-y-4">
             <div className="flex items-center justify-between">
-              <span className="text-[13px] sm:text-sm md:text-base text-gray-600">
+              <span className="text-[13px] sm:text-sm text-gray-500">
                 {!!response?.data?.publishTime
                   ? getFormatDatetime(
                       new Date(response?.data?.publishTime || ""),
@@ -122,8 +122,8 @@ const Page: NextPage<PageProps> = async ({ params, searchParams }) => {
                   : null}
               </span>
 
-              <div className="flex space-x-1 md:space-x-2.5 items-center max-md:text-[10px] md:text-sm text-black backdrop-blur-sm bg-amber-500/20 px-2 rounded-sm py-1 md:px-3.5 md:py-1.5 w-fit">
-                <Clock className="inline size-3 md:size-4" />
+              <div className="flex space-x-1 md:space-x-2.5 items-center max-md:text-[10px] md:text-sm text-black backdrop-blur-sm px-2 rounded-sm py-1 md:px-3.5 md:py-1.5 w-fit">
+                <Clock className="inline size-3 md:size-4 text-amber-500" />
                 <span>
                   {!!response?.data?.publishTime
                     ? getFormatHumanReadable(
@@ -136,10 +136,10 @@ const Page: NextPage<PageProps> = async ({ params, searchParams }) => {
             </div>
 
             <div className="flex flex-col space-y-2 md:space-y-4">
-              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-snug font-bold break-words">
+              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-snug font-bold wrap-break-word">
                 {response?.data?.title || ""}
               </h1>
-              <p className="text-gray-500 whitespace-pre-line break-words md:text-lg lg:text-xl">
+              <p className="text-gray-500 whitespace-pre-line wrap-break-word leading-relaxed 2xl:text-lg">
                 {response?.data?.summary}
               </p>
               <p className="text-xs text-amber-500 md:text-sm font-medium">
@@ -152,7 +152,7 @@ const Page: NextPage<PageProps> = async ({ params, searchParams }) => {
             )}
 
             <div className="flex flex-col space-y-2 md:space-y-3">
-              <p className="text-gray-500 whitespace-pre-line break-words md:text-lg lg:text-xl">
+              <p className="text-gray-500 whitespace-pre-line wrap-break-word 2xl:text-lg leading-relaxed">
                 {response?.data?.body}
               </p>
             </div>
@@ -160,20 +160,17 @@ const Page: NextPage<PageProps> = async ({ params, searchParams }) => {
         </Container>
       </div>
 
-      <div className="sticky top-20 md:mt-4 p-4 max-md:hidden col-span-4 h-fit bg-white mx-1.5 rounded-md md:rounded-xl lg:rounded-2xl mb-4 shadow-[0px_0px_21px_0px_rgba(0,_0,_0,_0.1)]">
+      <div className="sticky top-20 md:mt-4 p-4 max-md:hidden col-span-4 h-fit bg-white mx-1.5 rounded-md md:rounded-xl lg:rounded-2xl mb-4 shadow-[0px_0px_21px_0px_rgba(0,0,0,0.1)]">
         <div className="flex items-center space-x-2 text-amber-500">
           <Megaphone className="size-4" />
           <h4 className="font-bold md:text-sm lg:text-base">
             {t("advert-label")}
           </h4>
         </div>
-        <div className="w-full h-[1px] bg-gray-200/50 my-2 lg:my-3" />
+        <div className="w-full h-px bg-gray-200/50 my-2 lg:my-3" />
         <div>
           <Advertisement isPartialShow hideHighlight />
         </div>
-        {/* <Button className="w-full bg-amber-500 hover:bg-amber-500/80">
-          点击联系
-        </Button> */}
       </div>
     </div>
   );

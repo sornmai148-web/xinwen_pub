@@ -27,11 +27,11 @@ export const NewsBreadcrumb: React.FC<Props> = ({ parentLabel, subLabel }) => {
           className="pl-2.5 py-0.5 text-amber-500 rounded-sm cursor-pointer"
           onClick={() => router.back()}
         >
-          <div className="flex space-x-2 px-3 py-1.5 cursor-pointer items-center bg-amber-500 rounded-full">
+          <div className="flex space-x-2 px-3 py-1.5 cursor-pointer items-center bg-amber-500 rounded-xs">
             <span>
               <Home className="size-4 text-white" />
             </span>
-            <span className="text-xs text-white font-bold md:text-sm xl:text-base">
+            <span className="text-xs text-white font-bold md:text-sm">
               {t("btn-back")}
             </span>
           </div>
@@ -40,7 +40,7 @@ export const NewsBreadcrumb: React.FC<Props> = ({ parentLabel, subLabel }) => {
 
         {!!parentLabel && (
           <BreadcrumbItem className="px-0.5">
-            <BreadcrumbPage className="shrink-0 max-w-24 line-clamp-1 break-words text-xs md:text-sm xl:text-base">
+            <BreadcrumbPage className="shrink-0 max-w-24 line-clamp-1 wrap-break-word text-xs md:text-sm xl:text-base">
               {parentLabel}
             </BreadcrumbPage>
           </BreadcrumbItem>
@@ -49,7 +49,7 @@ export const NewsBreadcrumb: React.FC<Props> = ({ parentLabel, subLabel }) => {
 
         {!!subLabel && (
           <BreadcrumbItem className="px-0.5">
-            <BreadcrumbPage className="shrink-0 max-w-24 line-clamp-1 break-words text-xs md:text-sm xl:text-base">
+            <BreadcrumbPage className="shrink-0 max-w-24 line-clamp-1 wrap-break-word text-xs md:text-sm">
               {subLabel}
             </BreadcrumbPage>
           </BreadcrumbItem>
@@ -58,7 +58,7 @@ export const NewsBreadcrumb: React.FC<Props> = ({ parentLabel, subLabel }) => {
         {!!subLabel && <BreadcrumbSeparator />}
 
         <BreadcrumbItem>
-          <BreadcrumbPage className="line-clamp-1 text-xs md:text-sm xl:text-base pr-1.5">
+          <BreadcrumbPage className="line-clamp-1 text-xs md:text-sm pr-1.5">
             {t("view-detail")}
           </BreadcrumbPage>
         </BreadcrumbItem>

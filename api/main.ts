@@ -20,7 +20,7 @@ export async function fetchApi<T = any>(
   options: Options = {}
 ): Promise<T | null> {
   try {
-    const basePath = process.env.NEXT_API_URL || "http://localhost:3000";
+    const basePath = process.env.NEXT_PUBLIC_API_URL;
     const headers = sendHeaderGenerate(options?.body as any);
 
     const response = await fetch(`${basePath}${path}`, {
@@ -51,11 +51,7 @@ export async function fetchClientApi<T = any>(
   options: Options = {}
 ): Promise<T | null> {
   try {
-    const basePath =
-      process.env.NODE_ENV == "production"
-        ? "/api"
-        : process.env.NEXT_PUBLIC_API_URL;
-
+    const basePath = process.env.NEXT_PUBLIC_API_URL;
     const headers = sendHeaderGenerate(options?.body as any);
 
     const response = await fetch(`${basePath}${path}`, {

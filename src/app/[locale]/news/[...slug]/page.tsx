@@ -27,6 +27,7 @@ export async function generateMetadata({
   if (response?.code == 500) return redirect(ROUTES.SERVER_ERROR);
 
   return {
+    metadataBase: siteConfig?.siteUrl,
     title: response?.data?.seoTitle || siteConfig?.siteTitle,
     description: response?.data?.seoDescription || siteConfig?.siteDescription,
     keywords: siteConfig.keywords,

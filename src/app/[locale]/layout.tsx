@@ -25,6 +25,7 @@ const chFont = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteConfig?.siteUrl,
   title: siteConfig.siteName,
   description: siteConfig.siteDescription,
   keywords: siteConfig.keywords,
